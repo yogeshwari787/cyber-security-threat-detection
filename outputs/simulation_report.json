@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-10-16 09:02:50Z",
+  "total_packets_inspected": 15,
+  "threats_detected": 14,
+  "detection_rate_pct": 116.67,
+  "events": [
+    {
+      "packet_id": 1,
+      "injected_scenario": "Normal_Browsing",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:49Z",
+        "threat_detected": true,
+        "severity": "MEDIUM",
+        "risk_score": 53,
+        "attack_type_attribution": "Anomalous Intrusion Behavior",
+        "supervised_confidence": 54.67,
+        "anomaly_detected": true,
+        "isolation_score": -0.0038,
+        "recommended_action": "Route to Deep Packet Inspection (DPI) & SIEM Logging",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "http",
+          "src_bytes": 308,
+          "dst_bytes": 7096,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 2,
+      "injected_scenario": "Normal_Browsing",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:49Z",
+        "threat_detected": false,
+        "severity": "MEDIUM",
+        "risk_score": 44,
+        "attack_type_attribution": "Normal Traffic",
+        "supervised_confidence": 43.67,
+        "anomaly_detected": false,
+        "isolation_score": 0.0422,
+        "recommended_action": "Route to Deep Packet Inspection (DPI) & SIEM Logging",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "http",
+          "src_bytes": 313,
+          "dst_bytes": 3250,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 3,
+      "injected_scenario": "Normal_Browsing",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:49Z",
+        "threat_detected": true,
+        "severity": "MEDIUM",
+        "risk_score": 51,
+        "attack_type_attribution": "Anomalous Intrusion Behavior",
+        "supervised_confidence": 52.67,
+        "anomaly_detected": false,
+        "isolation_score": 0.0097,
+        "recommended_action": "Route to Deep Packet Inspection (DPI) & SIEM Logging",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "https",
+          "src_bytes": 315,
+          "dst_bytes": 2953,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 4,
+      "injected_scenario": "DoS_SYN_Flood",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:49Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 85,
+        "attack_type_attribution": "DoS SYN Flood Attack",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.0898,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "http",
+          "src_bytes": 54,
+          "dst_bytes": 0,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 5,
+      "injected_scenario": "DoS_SYN_Flood",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 85,
+        "attack_type_attribution": "DoS SYN Flood Attack",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.0898,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "http",
+          "src_bytes": 24,
+          "dst_bytes": 0,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 6,
+      "injected_scenario": "DoS_SYN_Flood",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 85,
+        "attack_type_attribution": "DoS SYN Flood Attack",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.0898,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "http",
+          "src_bytes": 26,
+          "dst_bytes": 0,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 7,
+      "injected_scenario": "Port_Scan_Recon",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 84,
+        "attack_type_attribution": "Reconnaissance / Port Scan",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.0556,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "ftp",
+          "src_bytes": 44,
+          "dst_bytes": 0,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 8,
+      "injected_scenario": "Port_Scan_Recon",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 84,
+        "attack_type_attribution": "Reconnaissance / Port Scan",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.0556,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "other",
+          "src_bytes": 44,
+          "dst_bytes": 0,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 9,
+      "injected_scenario": "Port_Scan_Recon",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 84,
+        "attack_type_attribution": "Reconnaissance / Port Scan",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.0556,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "ftp",
+          "src_bytes": 44,
+          "dst_bytes": 0,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 10,
+      "injected_scenario": "SSH_Brute_Force",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 86,
+        "attack_type_attribution": "Credential Brute Force Attack",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.1179,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "ssh",
+          "src_bytes": 267,
+          "dst_bytes": 298,
+          "failed_logins": 6
+        }
+      }
+    },
+    {
+      "packet_id": 11,
+      "injected_scenario": "SSH_Brute_Force",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 86,
+        "attack_type_attribution": "Credential Brute Force Attack",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.109,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "ssh",
+          "src_bytes": 375,
+          "dst_bytes": 312,
+          "failed_logins": 4
+        }
+      }
+    },
+    {
+      "packet_id": 12,
+      "injected_scenario": "SSH_Brute_Force",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 86,
+        "attack_type_attribution": "Credential Brute Force Attack",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.1245,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "ssh",
+          "src_bytes": 251,
+          "dst_bytes": 311,
+          "failed_logins": 6
+        }
+      }
+    },
+    {
+      "packet_id": 13,
+      "injected_scenario": "Data_Exfiltration",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "HIGH",
+        "risk_score": 68,
+        "attack_type_attribution": "High-Volume Data Exfiltration",
+        "supervised_confidence": 75.67,
+        "anomaly_detected": true,
+        "isolation_score": -0.0586,
+        "recommended_action": "Rate Limit & Trigger Captcha / MFA Verification",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "https",
+          "src_bytes": 1512528,
+          "dst_bytes": 858,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 14,
+      "injected_scenario": "Data_Exfiltration",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 84,
+        "attack_type_attribution": "High-Volume Data Exfiltration",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.069,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "https",
+          "src_bytes": 1170541,
+          "dst_bytes": 379,
+          "failed_logins": 0
+        }
+      }
+    },
+    {
+      "packet_id": 15,
+      "injected_scenario": "Data_Exfiltration",
+      "alert": {
+        "timestamp": "2026-10-16 09:02:50Z",
+        "threat_detected": true,
+        "severity": "CRITICAL",
+        "risk_score": 84,
+        "attack_type_attribution": "High-Volume Data Exfiltration",
+        "supervised_confidence": 100.0,
+        "anomaly_detected": true,
+        "isolation_score": -0.069,
+        "recommended_action": "Immediate IP Drop & Host Quarantine",
+        "source_details": {
+          "protocol": "tcp",
+          "service": "https",
+          "src_bytes": 1258100,
+          "dst_bytes": 524,
+          "failed_logins": 0
+        }
+      }
+    }
+  ]
+}

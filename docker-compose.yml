@@ -1,0 +1,13 @@
+services:
+  threat-radar:
+    build: .
+    container_name: ai_cyber_threat_radar
+    ports:
+      - "5050:5050"
+    environment:
+      - PORT=5050
+      - FLASK_ENV=production
+    volumes:
+      - ./outputs:/app/outputs
+      - ./models:/app/models
+    restart: unless-stopped
