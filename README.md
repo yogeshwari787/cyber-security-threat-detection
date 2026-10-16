@@ -137,8 +137,8 @@ AI-Cybersecurity-Threat-Detection/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-Cybersecurity-Threat-Detection.git
-cd AI-Cybersecurity-Threat-Detection
+git clone https://github.com/yogeshwari787/cyber-security-threat-detection.git
+cd cyber-security-threat-detection
 ```
 
 ### 2. Set Up Virtual Environment
